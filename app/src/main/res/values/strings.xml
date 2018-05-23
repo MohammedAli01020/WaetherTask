@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">weather Task</string>
+    <string name="google_maps_key" translatable="false">AIzaSyBK2bofa0w60uc4BaazzCiHLlA-Zkb_GJw</string>
+    <string name="map">map</string>
+    <string name="list">cities list</string>
+
+    <string name="details">details</string>
+
+    <string name="weather_city_name">City: %1$s</string>
+    <string name="weather_current_temp">Temp: %1$s</string>
+    <string name="weather_max_temp">Max temp: %1$s</string>
+    <string name="weather_humidity">Humidity: %1$s</string>
+    <string name="weather_pressure">Max temp: %1$s</string>
+    <string name="weather_wind_speed">Wind Speed: %1$s</string>
+    <string name="weather_wind_degree">Wind degree: %1$s</string>
+    <string name="weather_description">Description: %1$s</string>
+    <string name="splash_screen_image">splash screen image</string>
+    <string name="search_title">search</string>
+
+</resources>

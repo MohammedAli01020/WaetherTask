@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohamed.waethertask.ui.StartActivity">
+
+    <TextView
+        android:id="@+id/tv_map"
+        style="@style/CategoryStyle"
+        android:background="@color/category_numbers"
+        android:text="@string/map" />
+
+    <TextView
+        android:id="@+id/tv_list"
+        style="@style/CategoryStyle"
+        android:background="@color/category_family"
+        android:text="@string/list" />
+</LinearLayout>
+

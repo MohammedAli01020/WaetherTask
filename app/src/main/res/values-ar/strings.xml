@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الطقس</string>
+    <string name="weather_city_name">مدينة: %1$s</string>
+    <string name="weather_current_temp">درجة الحرارة: %1$s</string>
+    <string name="weather_max_temp">القيمة العظمي: %1$ss</string>
+    <string name="weather_pressure">الضغط: %1$s</string>
+    <string name="weather_wind_speed">سرعة الرياح: %1$s</string>
+    <string name="weather_wind_degree">درجة الرياح: %1$s</string>
+    <string name="weather_humidity">نسبة الرطوبه: %1$s</string>
+    <string name="weather_description">حالة الطقس: %1$s</string>
+    <string name="map">الخريطة</string>
+    <string name="list">قائمة المدن</string>
+
+    <string name="details">التفاصيل</string>
+
+</resources>

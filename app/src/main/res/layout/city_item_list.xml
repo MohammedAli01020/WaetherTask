@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        style="@style/WeatherListItemStyle"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/tv_city_current_temp"
+        style="@style/WeatherListItemStyle"
+        tools:text="temp" />
+
+    <TextView
+        android:id="@+id/tv_city_humidity"
+        style="@style/WeatherListItemStyle"
+        tools:text="humidity" />
+
+    <TextView
+        android:id="@+id/tv_city_windSpeed"
+        style="@style/WeatherListItemStyle"
+        tools:text="windSpeed" />
+
+    <TextView
+        android:id="@+id/tv_city_degree"
+        style="@style/WeatherListItemStyle"
+        tools:text="degree" />
+</LinearLayout>
