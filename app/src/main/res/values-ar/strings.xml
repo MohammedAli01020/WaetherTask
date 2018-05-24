@@ -11,6 +11,7 @@
     <string name="weather_description">حالة الطقس: %1$s</string>
     <string name="map">الخريطة</string>
     <string name="list">قائمة المدن</string>
+    <string name="weather_app">تطبيق الطقس</string>
 
     <string name="details">التفاصيل</string>
 

@@ -16,5 +16,6 @@
     <string name="weather_description">Description: %1$s</string>
     <string name="splash_screen_image">splash screen image</string>
     <string name="search_title">search</string>
+    <string name="weather_app">weather app</string>
 
 </resources>
