@@ -58,7 +58,7 @@ public class DetailsActivity extends AppCompatActivity {
         mName.setText(getString(R.string.weather_city_name,
                 data.getString("name")));
         mCurrentTemp.setText(getString(R.string.weather_current_temp,
-                Double.parseDouble(data.getString("currentTemp"))));
+                kelvin2Celsius(data.getString("currentTemp"))));
         mMaxTemp.setText(getString(R.string.weather_max_temp,
                 kelvin2Celsius(data.getString("maxTemp"))));
         mHumidity.setText(getString(R.string.weather_humidity,
