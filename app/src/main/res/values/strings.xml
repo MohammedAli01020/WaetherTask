@@ -7,11 +7,11 @@
     <string name="details">details</string>
 
     <string name="weather_city_name">City: %1$s</string>
-    <string name="weather_current_temp">Temp: %1$s</string>
-    <string name="weather_max_temp">Max temp: %1$s</string>
+    <string name="weather_current_temp">Temp: %1$.2f</string>
+    <string name="weather_max_temp">Max temp: %1$.2f</string>
     <string name="weather_humidity">Humidity: %1$s</string>
     <string name="weather_pressure">Max temp: %1$s</string>
-    <string name="weather_wind_speed">Wind Speed: %1$s</string>
+    <string name="weather_wind_speed">Wind Speed: %1$s m/s</string>
     <string name="weather_wind_degree">Wind degree: %1$s</string>
     <string name="weather_description">Description: %1$s</string>
     <string name="splash_screen_image">splash screen image</string>

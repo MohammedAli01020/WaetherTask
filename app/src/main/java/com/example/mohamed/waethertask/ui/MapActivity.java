@@ -48,7 +48,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         for (Weather p : mWeathers) {
             Marker marker = googleMap.addMarker(new MarkerOptions().position(new LatLng(p.getmLat(), p.getmLon()))
-                    .title(getString(R.string.weather_current_temp, p.getmCurrentTemp())));
+                    .title(getString(R.string.weather_current_temp, Double.parseDouble(p.getmCurrentTemp()))));
 
             marker.setSnippet(getString(R.string.weather_city_name, p.getmCityName()) + "\n" +
                     getString(R.string.weather_humidity, p.getmHumidity()) + "\n" +

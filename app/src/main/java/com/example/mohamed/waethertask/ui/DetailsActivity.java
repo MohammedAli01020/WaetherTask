@@ -58,9 +58,9 @@ public class DetailsActivity extends AppCompatActivity {
         mName.setText(getString(R.string.weather_city_name,
                 data.getString("name")));
         mCurrentTemp.setText(getString(R.string.weather_current_temp,
-                data.getString("currentTemp")));
+                Double.parseDouble(data.getString("currentTemp"))));
         mMaxTemp.setText(getString(R.string.weather_max_temp,
-                data.getString("maxTemp")));
+                kelvin2Celsius(data.getString("maxTemp"))));
         mHumidity.setText(getString(R.string.weather_humidity,
                 data.getString("humidity")));
         mPressure.setText(getString(R.string.weather_pressure,
@@ -71,5 +71,9 @@ public class DetailsActivity extends AppCompatActivity {
                 data.getString("windDeg")));
         mWeatherDescription.setText(getString(R.string.weather_description,
                 data.getString("weatherDescription")));
+    }
+
+    private double kelvin2Celsius(String kelvin) {
+        return Double.parseDouble(kelvin) - 273.15;
     }
 }
