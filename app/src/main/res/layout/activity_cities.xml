@@ -3,9 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".ui.CitiesActivity">
 
     <ListView
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
         android:id="@+id/cities_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

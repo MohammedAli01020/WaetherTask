@@ -9,13 +9,13 @@
     <TextView
         android:id="@+id/tv_map"
         style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
+        android:background="@color/category_map"
         android:text="@string/map" />
 
     <TextView
         android:id="@+id/tv_list"
         style="@style/CategoryStyle"
-        android:background="@color/category_family"
+        android:background="@color/category_cities_list"
         android:text="@string/list" />
 </LinearLayout>
 

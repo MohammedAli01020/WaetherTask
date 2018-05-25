@@ -20,15 +20,9 @@
     </style>
 
     <style name="WeatherListItemStyle">
-        <!--
-            android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:textAppearanceLarge"
-        -->
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?textAppearanceListItem</item>
     </style>
 
 </resources>

@@ -1,58 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context="com.example.mohamed.waethertask.ui.DetailsActivity">
 
     <ImageView
-        android:layout_margin="16dp"
         android:id="@+id/img_details_weather_icon"
-        android:layout_gravity="center"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:contentDescription="@string/weather_icon" />
+        android:layout_margin="16dp"
+        android:contentDescription="@string/weather_icon"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_details_weather_icon">
 
-    <TextView
-        android:id="@+id/tv_name"
-        style="@style/WeatherListItemStyle"
-        tools:text="name" />
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/WeatherListItemStyle"
+            tools:text="name" />
 
-    <TextView
-        android:id="@+id/tv_current_temp"
-        style="@style/WeatherListItemStyle"
-        tools:text="temp" />
+        <TextView
+            android:id="@+id/tv_current_temp"
+            style="@style/WeatherListItemStyle"
+            tools:text="temp" />
 
-    <TextView
-        android:id="@+id/tv_max_temp"
-        style="@style/WeatherListItemStyle"
-        tools:text="max temp" />
+        <TextView
+            android:id="@+id/tv_max_temp"
+            style="@style/WeatherListItemStyle"
+            tools:text="max temp" />
 
-    <TextView
-        android:id="@+id/tv_humidity"
-        style="@style/WeatherListItemStyle"
-        tools:text="humidity" />
+        <TextView
+            android:id="@+id/tv_humidity"
+            style="@style/WeatherListItemStyle"
+            tools:text="humidity" />
 
-    <TextView
-        android:id="@+id/tv_pressure"
-        style="@style/WeatherListItemStyle"
-        tools:text="pressure" />
+        <TextView
+            android:id="@+id/tv_pressure"
+            style="@style/WeatherListItemStyle"
+            tools:text="pressure" />
 
-    <TextView
-        android:id="@+id/tv_wind_speed"
-        style="@style/WeatherListItemStyle"
-        tools:text="wind speed" />
+        <TextView
+            android:id="@+id/tv_wind_speed"
+            style="@style/WeatherListItemStyle"
+            tools:text="wind speed" />
 
-    <TextView
-        android:id="@+id/tv_wind_deg"
-        style="@style/WeatherListItemStyle"
-        tools:text="wind degree" />
+        <TextView
+            android:id="@+id/tv_wind_deg"
+            style="@style/WeatherListItemStyle"
+            tools:text="wind degree" />
 
-    <TextView
-        android:id="@+id/tv_weather_description"
-        style="@style/WeatherListItemStyle"
-        tools:text="description" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_weather_description"
+            style="@style/WeatherListItemStyle"
+            tools:text="description" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

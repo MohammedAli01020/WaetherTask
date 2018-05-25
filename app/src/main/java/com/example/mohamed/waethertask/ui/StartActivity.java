@@ -12,6 +12,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class StartActivity extends AppCompatActivity {
+
     @BindView(R.id.tv_map)
     TextView mapTextView;
 
