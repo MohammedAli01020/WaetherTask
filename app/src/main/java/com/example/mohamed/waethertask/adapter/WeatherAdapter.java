@@ -1,16 +1,19 @@
 package com.example.mohamed.waethertask.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mohamed.waethertask.R;
 import com.example.mohamed.waethertask.data.Weather;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -19,6 +22,7 @@ import butterknife.ButterKnife;
 
 
 public class WeatherAdapter extends ArrayAdapter<Weather> {
+    private static final String IMAGE_PATH = "http://openweathermap.org/img/w/";
 
     public WeatherAdapter(@NonNull Context context, @NonNull List cities) {
         super(context, 0, cities);
@@ -46,13 +50,17 @@ public class WeatherAdapter extends ArrayAdapter<Weather> {
         holder.cityName.setText(context.getString(R.string.weather_city_name,
                 currentWeather.getmCityName()));
         holder.currentTemp.setText(context.getString(R.string.weather_current_temp,
-                kelvin2Celsius(currentWeather.getmCurrentTemp())));
+                Double.parseDouble(currentWeather.getmCurrentTemp())));
         holder.humidity.setText(context.getString(R.string.weather_humidity,
                 currentWeather.getmHumidity()));
         holder.windSpeed.setText(context.getString(R.string.weather_wind_speed,
                 currentWeather.getmWindSpeed()));
         holder.windDeg.setText(context.getString(R.string.weather_wind_degree,
                 currentWeather.getmDeg()));
+
+        Picasso.get()
+                .load(Uri.parse(IMAGE_PATH + currentWeather.getmWeatherIcon() + ".png").toString())
+                .into(holder.weatherIcon);
 
         return rootView;
     }
@@ -63,14 +71,10 @@ public class WeatherAdapter extends ArrayAdapter<Weather> {
         @BindView(R.id.tv_city_humidity) TextView humidity;
         @BindView(R.id.tv_city_windSpeed) TextView windSpeed;
         @BindView(R.id.tv_city_degree) TextView windDeg;
+        @BindView(R.id.img_weather_icon) ImageView weatherIcon;
 
         ViewHolder(View itemView) {
             ButterKnife.bind(this, itemView);
-
         }
-    }
-
-    private double kelvin2Celsius(String kelvin) {
-        return Double.parseDouble(kelvin) - 273.15;
     }
 }

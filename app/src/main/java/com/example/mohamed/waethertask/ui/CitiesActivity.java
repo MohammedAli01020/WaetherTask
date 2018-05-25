@@ -76,6 +76,7 @@ public class CitiesActivity extends AppCompatActivity implements
                 data.putString("windSpeed", currentWeather.getmWindSpeed());
                 data.putString("windDeg", currentWeather.getmDeg());
                 data.putString("weatherDescription", currentWeather.getmWeatherDescription());
+                data.putString("weatherIcon", currentWeather.getmWeatherIcon());
 
                 intent.putExtras(data);
 

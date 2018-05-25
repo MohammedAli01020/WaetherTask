@@ -129,9 +129,9 @@ public final class QueryUtils {
                     JSONArray weather = currentCity.getJSONArray("weather");
                     JSONObject firstObject = weather.getJSONObject(0);
                     String weatherDescription = firstObject.getString("description");
-
+                    String weatherIcon = firstObject.getString("icon");
                     Weather place = new Weather(lon, lat, cityName, currentTemp,
-                            tempMax, pressure, humidity, windSpeed, deg, weatherDescription);
+                            tempMax, pressure, humidity, windSpeed, deg, weatherDescription, weatherIcon);
 
                     weathers.add(place);
                 }
@@ -165,9 +165,10 @@ public final class QueryUtils {
                 JSONArray weather = baseResponse.getJSONArray("weather");
                 JSONObject firstObject = weather.getJSONObject(0);
                 String weatherDescription = firstObject.getString("description");
+                String weatherIcon = firstObject.getString("icon");
 
                 Weather place = new Weather(lon, lat, cityName, currentTemp,
-                        tempMax, pressure, humidity, windSpeed, deg, weatherDescription);
+                        tempMax, pressure, humidity, windSpeed, deg, weatherDescription, weatherIcon);
 
                 weathers.add(place);
 

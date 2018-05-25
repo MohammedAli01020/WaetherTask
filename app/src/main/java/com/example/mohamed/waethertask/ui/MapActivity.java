@@ -27,7 +27,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private static final int LOADER_ID = 22;
     private List<Weather> mWeathers;
-
     private SupportMapFragment mMapFragment;
 
     @Override

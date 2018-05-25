@@ -12,6 +12,7 @@ public class Weather {
     private String mWindSpeed;
     private String mDeg;
     private String mWeatherDescription;
+    private String mWeatherIcon;
 
     /**
      *
@@ -25,8 +26,10 @@ public class Weather {
      * @param mWindSpeed wind speed
      * @param mDeg desgree
      * @param mWeatherDescription description
+     *  @param mWeatherIcon weather icon
      */
-    public Weather(double mLon, double mLat, String mCityName, String mCurrentTemp, String mTempMax, String mPressure, String mHumidity, String mWindSpeed, String mDeg, String mWeatherDescription) {
+    public Weather(double mLon, double mLat, String mCityName, String mCurrentTemp, String mTempMax, String mPressure,
+                   String mHumidity, String mWindSpeed, String mDeg, String mWeatherDescription, String mWeatherIcon) {
         this.mLon = mLon;
         this.mLat = mLat;
         this.mCityName = mCityName;
@@ -37,6 +40,7 @@ public class Weather {
         this.mWindSpeed = mWindSpeed;
         this.mDeg = mDeg;
         this.mWeatherDescription = mWeatherDescription;
+        this.mWeatherIcon = mWeatherIcon;
     }
 
     public double getmLon() {
@@ -77,5 +81,9 @@ public class Weather {
 
     public String getmWeatherDescription() {
         return mWeatherDescription;
+    }
+
+    public String getmWeatherIcon() {
+        return mWeatherIcon;
     }
 }
