@@ -50,7 +50,7 @@ public class WeatherAdapter extends ArrayAdapter<Weather> {
         holder.cityName.setText(context.getString(R.string.weather_city_name,
                 currentWeather.getmCityName()));
         holder.currentTemp.setText(context.getString(R.string.weather_current_temp,
-                Double.parseDouble(currentWeather.getmCurrentTemp())));
+                kelvin2Celsius(currentWeather.getmCurrentTemp())));
         holder.humidity.setText(context.getString(R.string.weather_humidity,
                 currentWeather.getmHumidity()));
         holder.windSpeed.setText(context.getString(R.string.weather_wind_speed,
@@ -76,5 +76,9 @@ public class WeatherAdapter extends ArrayAdapter<Weather> {
         ViewHolder(View itemView) {
             ButterKnife.bind(this, itemView);
         }
+    }
+
+    private double kelvin2Celsius(String kelvin) {
+        return Double.parseDouble(kelvin) - 273.15;
     }
 }
