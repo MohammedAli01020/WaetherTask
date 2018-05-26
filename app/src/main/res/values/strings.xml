@@ -18,5 +18,6 @@
     <string name="search_title">search</string>
     <string name="weather_app">weather app</string>
     <string name="weather_icon">weather icon</string>
+    <string name="transition_name">image_transition</string>
 
 </resources>
