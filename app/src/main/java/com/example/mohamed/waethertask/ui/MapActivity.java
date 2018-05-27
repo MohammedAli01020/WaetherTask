@@ -23,7 +23,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         LoaderManager.LoaderCallbacks<List<Weather>> {
 
     private static final String URL_ADDRESS =
-            "http://samples.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&appid=b6907d289e10d714a6e88b30761fae22";
+            "http://api.openweathermap.org/data/2.5/box/city?bbox=24.70007,22.0,36.86623,31.58568,10&&appid=e8b5a0596323011ae1c930c7ef3cf01e";
 
     private static final int LOADER_ID = 22;
     private List<Weather> mWeathers;

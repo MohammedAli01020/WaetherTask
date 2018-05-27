@@ -32,10 +32,8 @@ public final class QueryUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        boolean flag = true;
-        if (url.toString().contains("api")) {
-            flag = false;
-        }
+        boolean flag = url.toString().contains("bbox"); // true: has array
+
         return extractWeather(jsonResponse, flag);
     }
 
@@ -102,6 +100,7 @@ public final class QueryUtils {
             return null;
         }
         List<Weather> weathers = new ArrayList<>();
+
         if (flag) {
             try {
                 JSONObject baseResponse = new JSONObject(jsonResponse);
@@ -112,8 +111,8 @@ public final class QueryUtils {
                     String cityName = currentCity.getString("name");
 
                     JSONObject coord = currentCity.getJSONObject("coord");
-                    double lon = coord.getDouble("lon");
-                    double lat = coord.getDouble("lat");
+                    double lon = coord.getDouble("Lon");
+                    double lat = coord.getDouble("Lat");
 
                     JSONObject main = currentCity.getJSONObject("main");
 

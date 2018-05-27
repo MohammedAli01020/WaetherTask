@@ -39,7 +39,8 @@ public class CitiesActivity extends AppCompatActivity implements
     private static final String URL_FOR_QUERY =
             "http://api.openweathermap.org/data/2.5/weather?appid=f242acfd7bb9431ca04e38448b4d58ef";
     private static final String URL_ADDRESS =
-            "http://samples.openweathermap.org/data/2.5/box/city?bbox=24.70007,22.0,36.86623,31.58568,10&appid=f242acfd7bb9431ca04e38448b4d58ef";
+            "http://api.openweathermap.org/data/2.5/box/city?bbox=24.70007,22.0,36.86623,31.58568,10&&appid=e8b5a0596323011ae1c930c7ef3cf01e";
+
     @BindView(R.id.cities_list)
     ListView mCitiesListView;
     WeatherAdapter mAdapter;
